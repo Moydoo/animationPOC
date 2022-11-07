@@ -13,26 +13,33 @@ window.onmousemove = e => {
     const xPos = (mouseX - (window.innerWidth / 2)),
         yPos = (mouseY - (window.innerHeight / 2));
 
+    let xPos_l1 = xPos / 5,
+        yPos_l1 = yPos / 5,
+        xPos_l2 = xPos / 7.5,
+        yPos_l2 = yPos / 7.5,
+        xPos_l3 = xPos / 10,
+        yPos_l3 = yPos / 10;
+
     l1.animate({
-        transform: `translate(${xPos / 5}px, ${yPos / 5}px)`
+        transform: `translate(${xPos_l1}px, ${yPos_l1}px)`
     }, {
-        duration: 8000,
+        duration: 7000,
         fill: "forwards",
         easing: "ease"
     })
 
     l2.animate({
-        transform: `translate(${xPos / 7.5}px, ${yPos / 7.5}px)`
+        transform: `translate(${xPos_l2}px, ${yPos_l2}px)`
     }, {
-        duration: 8000,
+        duration: 7000,
         fill: "forwards",
         easing: "ease"
     })
 
     l3.animate({
-        transform: `translate(${xPos / 10}px, ${yPos / 10}px)`
+        transform: `translate(${xPos_l3}px, ${yPos_l3}px)`
     }, {
-        duration: 8000,
+        duration: 7000,
         fill: "forwards",
         easing: "ease"
     })
