@@ -44,3 +44,13 @@ window.onmousemove = e => {
         easing: "ease"
     })
 }
+
+const str = 'superMega_warriOr-ExCalibUr_eX'
+let strArr = str.split(/-|_/),
+    resultString = ''
+
+for (let i = 0; i <= strArr.length; i++) {
+    strArr[i] = strArr[i].toLowerCase()
+    resultString += strArr[i][0].toUpperCase() + strArr[i].substring(1)
+}
+console.log(resultString);
